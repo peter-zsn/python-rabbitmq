@@ -7,6 +7,7 @@
 import pika
 from retry import retry
 import threading
+import datetime
 
 username = 'admin'
 password = '123456'
@@ -22,7 +23,8 @@ result = channel.queue_declare(queue='python-test', durable=True)
 
 
 def callback(ch, method, properties, body):
-    print(f'produ recv %s' % body)
+    print(f'produ recv %s time is : %s' % (body, datetime.datetime.now()))
+    ch.basic_ack(delivery_tag=method.delivery_tag)          # 回复消息，说明本条消息已经消费，请移除queue
 
 
 @retry(pika.exceptions.AMQPConnectionError, delay=5, jitter=(1, 3))
