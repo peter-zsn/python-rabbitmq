@@ -35,7 +35,7 @@ python操作rabbitmq生产者消费者
   
  ### exchange 调取策略
   
-  https://img-blog.csdnimg.cn/20181120161646287.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Jlc3RteQ==,size_16,color_FFFFFF,t_70
+  ![avatar](https://img-blog.csdnimg.cn/20181120161646287.png)
  
   与exchange type, bind key, routingkey 三者有关
   根据routing key 和 exchange 绑定的queue的binding key分配消息，
