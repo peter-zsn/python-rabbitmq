@@ -19,7 +19,11 @@ connection = pika.BlockingConnection(pika.ConnectionParameters(
     heartbeat=0
 ))
 channel = connection.channel()
-result = channel.queue_declare(queue='python-test', durable=True)
+channel.exchange_declare(exchange='python-test', durable=True, exchange_type='fanout')
+result = channel.queue_declare(queue='', durable=True)
+queue_name = result.method.queue
+print(queue_name, 123)
+channel.queue_bind(exchange='python-test', queue=queue_name)
 
 
 def callback(ch, method, properties, body):
@@ -27,9 +31,8 @@ def callback(ch, method, properties, body):
     ch.basic_ack(delivery_tag=method.delivery_tag)          # 回复消息，说明本条消息已经消费，请移除queue
 
 
-@retry(pika.exceptions.AMQPConnectionError, delay=5, jitter=(1, 3))
 def test():
-    channel.basic_consume(queue='python-test', on_message_callback=callback, auto_ack=False)
+    channel.basic_consume(queue=queue_name, on_message_callback=callback, auto_ack=False)
     channel.start_consuming()
 
 if __name__ == "__main__":

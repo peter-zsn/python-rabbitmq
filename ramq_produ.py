@@ -25,15 +25,15 @@ def test(i):
     ))
 
     channel = connection.channel()
-    channel.queue_declare(queue='python-test', durable=True)
+    channel.exchange_declare(exchange='python-test', durable=True, exchange_type='fanout')
     message = f'this is message id : {str(i)}'
-    channel.basic_publish(exchange='', routing_key='python-test', body=message)
+    channel.basic_publish(exchange='python-test', routing_key='', body=message)
     channel.close()
     connection.close()
 
 if __name__ == "__main__":
     ts = []
-    for i in range(10):
+    for i in range(1):
         t = threading.Thread(target=test, args=(i, ))
         ts.append(t)
         # test(i)
