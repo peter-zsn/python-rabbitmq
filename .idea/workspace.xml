@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d46bd6-9b39-4f1c-8d17-5e286b7e5f4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pool/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pool/client2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pool/ramq_pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pool/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ramq_produ.py" beforeDir="false" afterPath="$PROJECT_DIR$/ramq_produ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ramq_root.py" beforeDir="false" afterPath="$PROJECT_DIR$/ramq_root.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pool" />
+    </key>
   </component>
   <component name="RunManager" selected="Python tests.Nosetests for ramq_produ.test">
     <configuration name="Nosetests for ramq_produ.test" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
@@ -85,7 +93,7 @@
       <updated>1615344199377</updated>
       <workItem from="1615344200795" duration="6174000" />
       <workItem from="1615361070678" duration="3104000" />
-      <workItem from="1615449492670" duration="800000" />
+      <workItem from="1615449492670" duration="7019000" />
     </task>
     <servers />
   </component>
@@ -117,6 +125,11 @@
     <state width="1862" height="275" key="GridCell.Tab.0.right/0.23.1440.812/-1920.-223.1920.1057@0.23.1440.812" timestamp="1615449469004" />
     <state width="1382" height="195" key="GridCell.Tab.0.right/0.23.1440.812/1440.77.1920.1057@0.23.1440.812" timestamp="1615360545581" />
     <state width="1862" height="275" key="GridCell.Tab.0.right/0.23.1440.812/1440.77.1920.1057@1440.77.1920.1057" timestamp="1615365294834" />
+    <state x="-1684" y="-129" width="1441" height="778" key="dock-window-1" timestamp="1615519622301">
+      <screen x="-1920" y="-223" width="1920" height="1057" />
+    </state>
+    <state x="-1684" y="-129" width="1441" height="778" key="dock-window-1/0.23.1440.824/-1920.-223.1920.1057@0.23.1440.824" timestamp="1615519622301" />
+    <state x="-1684" y="-129" width="1441" height="778" key="dock-window-1/0.23.1440.825/-1920.-223.1920.1057@0.23.1440.825" timestamp="1615519559860" />
     <state x="284" y="23" width="872" height="1032" key="search.everywhere.popup" timestamp="1615345419147">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
